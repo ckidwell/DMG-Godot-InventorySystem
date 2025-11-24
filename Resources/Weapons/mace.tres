@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=3 format=3 uid="uid://du538h7usp274"]
+
+[ext_resource type="Texture2D" uid="uid://dhb0m4r405u6w" path="res://Images/AIIcons/Weapons/mace.png" id="1_m7lw2"]
+[ext_resource type="Script" uid="uid://cn54g7ufwhjgi" path="res://Code/Data/WeaponData.cs" id="1_v5vcd"]
+
+[resource]
+script = ExtResource("1_v5vcd")
+weaponType = 1
+minDamage = 2
+maxDamage = 6
+ActionPointCost = 5
+itemName = "Cultist Mace"
+description = "An evil looking mace used by a cultist."
+icon = ExtResource("1_m7lw2")
+thisSlotRequires = 11
+itemType = 8
+quality = 2
+isBlank = false
+metadata/_custom_type_script = "uid://cn54g7ufwhjgi"

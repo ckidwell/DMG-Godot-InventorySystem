@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ArmorData" load_steps=3 format=3 uid="uid://c8r8wsbcrhbbg"]
+
+[ext_resource type="Script" uid="uid://uvveuwyulnbk" path="res://Code/Data/ArmorData.cs" id="1_ded36"]
+[ext_resource type="Texture2D" uid="uid://wcb6aj7ctgkh" path="res://Images/Armor/plate_boots.png" id="1_usaof"]
+
+[resource]
+script = ExtResource("1_ded36")
+armorAmount = 8
+armorType = 2
+itemName = "Plate Boots"
+description = "A sturdy set of plate boots."
+icon = ExtResource("1_usaof")
+thisSlotRequires = 4
+itemType = 1
+price = 15
+isBlank = false
+metadata/_custom_type_script = "uid://uvveuwyulnbk"

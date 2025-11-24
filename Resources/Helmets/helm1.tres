@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ArmorData" load_steps=3 format=3 uid="uid://bfs80fuanp4d8"]
+
+[ext_resource type="Texture2D" uid="uid://ciwr3eu11fx81" path="res://Images/Armor/helmet_2.png" id="1_6l74l"]
+[ext_resource type="Script" uid="uid://uvveuwyulnbk" path="res://Code/Data/ArmorData.cs" id="1_e88u5"]
+
+[resource]
+script = ExtResource("1_e88u5")
+armorAmount = 7
+armorType = 2
+itemName = "Platemail Helmet"
+description = "Appears to have been a helmet for a former royal guard."
+icon = ExtResource("1_6l74l")
+thisSlotRequires = 6
+itemType = 1
+quality = 3
+price = 25
+isBlank = false
+metadata/_custom_type_script = "uid://uvveuwyulnbk"

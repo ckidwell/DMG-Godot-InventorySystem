@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=3 format=3 uid="uid://c5nhrj0s54yn0"]
+
+[ext_resource type="Texture2D" uid="uid://xd1oegfjlqfs" path="res://Images/AIIcons/Weapons/sword_1h.png" id="1_m0aid"]
+[ext_resource type="Script" uid="uid://cn54g7ufwhjgi" path="res://Code/Data/WeaponData.cs" id="1_ws0b1"]
+
+[resource]
+script = ExtResource("1_ws0b1")
+weaponType = 1
+minDamage = 2
+maxDamage = 8
+ActionPointCost = 4
+itemName = "Sword"
+description = "A long sword."
+icon = ExtResource("1_m0aid")
+thisSlotRequires = 13
+itemType = 8
+isBlank = false
+metadata/_custom_type_script = "uid://cn54g7ufwhjgi"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ArmorData" load_steps=3 format=3 uid="uid://c6tislqgmpojl"]
+
+[ext_resource type="Script" uid="uid://uvveuwyulnbk" path="res://Code/Data/ArmorData.cs" id="1_slihk"]
+[ext_resource type="Texture2D" uid="uid://djmqlet4xseuu" path="res://Images/Armor/redleather_boots.png" id="1_wfpsm"]
+
+[resource]
+script = ExtResource("1_slihk")
+armorAmount = 6
+itemName = "Red Leather Boots"
+description = "A fine set of gilded red leather boots."
+icon = ExtResource("1_wfpsm")
+thisSlotRequires = 4
+itemType = 1
+quality = 2
+price = 20
+isBlank = false
+metadata/_custom_type_script = "uid://uvveuwyulnbk"

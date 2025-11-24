@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PotionData" load_steps=3 format=3 uid="uid://b07lta2pj3w5q"]
+
+[ext_resource type="Texture2D" uid="uid://dojwjoppqs7of" path="res://Images/AIIcons/Potions/green_potion.png" id="1_kfgr8"]
+[ext_resource type="Script" uid="uid://dyg76heuhweyx" path="res://Code/Data/PotionData.cs" id="1_yha7n"]
+
+[resource]
+script = ExtResource("1_yha7n")
+potionType = 2
+amount = 5
+itemName = "Action Point Potion"
+description = "This will restore some action points."
+icon = ExtResource("1_kfgr8")
+itemType = 3
+isBlank = false
+metadata/_custom_type_script = "uid://dyg76heuhweyx"

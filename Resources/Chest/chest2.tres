@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ArmorData" load_steps=3 format=3 uid="uid://ddkdvjslrpjge"]
+
+[ext_resource type="Texture2D" uid="uid://v73urvjr6jy7" path="res://Images/Armor/chest_armor6.png" id="1_6rjyl"]
+[ext_resource type="Script" uid="uid://uvveuwyulnbk" path="res://Code/Data/ArmorData.cs" id="1_rmcsd"]
+
+[resource]
+script = ExtResource("1_rmcsd")
+armorAmount = 5
+itemName = "Leather Armor"
+description = "A set of leather armor."
+icon = ExtResource("1_6rjyl")
+thisSlotRequires = 2
+itemType = 1
+isBlank = false
+metadata/_custom_type_script = "uid://uvveuwyulnbk"

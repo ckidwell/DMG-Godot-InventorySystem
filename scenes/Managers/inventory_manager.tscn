@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://wyuldxsey41x"]
+
+[ext_resource type="Script" uid="uid://clh75kcncm6p3" path="res://Code/Managers/InventoryManager.cs" id="1_6rl5f"]
+[ext_resource type="Script" uid="uid://d2tvrab6h6gqi" path="res://Code/Models/MagicSystems/Attributes.cs" id="2_b7swq"]
+
+[node name="inventory_manager" type="Node"]
+script = ExtResource("1_6rl5f")
+
+[node name="attributes" type="Node" parent="."]
+script = ExtResource("2_b7swq")
+attribute_1_max = 3
+attribute_2_max = 3
+attribute_3_max = 3
+MAX_NUM_ATTRIBUTES = 3

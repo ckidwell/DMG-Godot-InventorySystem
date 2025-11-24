@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PotionData" load_steps=3 format=3 uid="uid://bcwg4tnqx8jfk"]
+
+[ext_resource type="Script" uid="uid://dyg76heuhweyx" path="res://Code/Data/PotionData.cs" id="1_0s2m1"]
+[ext_resource type="Texture2D" uid="uid://bx4xm4breivr0" path="res://Images/AIIcons/Potions/red_potion.png" id="1_vx5p3"]
+
+[resource]
+script = ExtResource("1_0s2m1")
+amount = 15
+itemName = "Healing Potion"
+description = "This will restore some health."
+icon = ExtResource("1_vx5p3")
+itemType = 3
+price = 15
+isBlank = false
+metadata/_custom_type_script = "uid://dyg76heuhweyx"

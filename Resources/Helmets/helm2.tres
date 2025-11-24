@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ArmorData" load_steps=3 format=3 uid="uid://cebp4fanv34yc"]
+
+[ext_resource type="Texture2D" uid="uid://cnioeiidkc7mh" path="res://Images/Armor/helmet_1.png" id="1_8urtt"]
+[ext_resource type="Script" uid="uid://uvveuwyulnbk" path="res://Code/Data/ArmorData.cs" id="1_x4q27"]
+
+[resource]
+script = ExtResource("1_x4q27")
+armorAmount = 5
+itemName = "Rogue's Helmet"
+description = "Shrouded and matte, great for hiding in the shadows."
+icon = ExtResource("1_8urtt")
+thisSlotRequires = 6
+itemType = 1
+quality = 1
+price = 15
+isBlank = false
+metadata/_custom_type_script = "uid://uvveuwyulnbk"

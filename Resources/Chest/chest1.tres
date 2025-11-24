@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ArmorData" load_steps=3 format=3 uid="uid://b8u5nnm60otu1"]
+
+[ext_resource type="Texture2D" uid="uid://dhacjef4ucxo3" path="res://Images/Armor/chest_armor1.png" id="1_6xmbe"]
+[ext_resource type="Script" uid="uid://uvveuwyulnbk" path="res://Code/Data/ArmorData.cs" id="1_jynrr"]
+
+[resource]
+script = ExtResource("1_jynrr")
+armorAmount = 10
+armorType = 2
+itemName = "Platemail"
+description = "A fine set of platemail armor."
+icon = ExtResource("1_6xmbe")
+thisSlotRequires = 2
+itemType = 1
+quality = 1
+isBlank = false
+metadata/_custom_type_script = "uid://uvveuwyulnbk"

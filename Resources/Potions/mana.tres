@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PotionData" load_steps=3 format=3 uid="uid://dubjey4x56ln3"]
+
+[ext_resource type="Script" uid="uid://dyg76heuhweyx" path="res://Code/Data/PotionData.cs" id="1_b0cv1"]
+[ext_resource type="Texture2D" uid="uid://cnnpo4wxo41pd" path="res://Images/AIIcons/Potions/blue_potion.png" id="1_jjvek"]
+
+[resource]
+script = ExtResource("1_b0cv1")
+potionType = 1
+amount = 10
+itemName = "Mana Potion"
+description = "This will restore some mana."
+icon = ExtResource("1_jjvek")
+itemType = 3
+isBlank = false
+metadata/_custom_type_script = "uid://dyg76heuhweyx"

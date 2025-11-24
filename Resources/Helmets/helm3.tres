@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ArmorData" load_steps=3 format=3 uid="uid://cfxh5d7nc5oie"]
+
+[ext_resource type="Texture2D" uid="uid://dqkuqsie5uy38" path="res://Images/Armor/helmet_5.png" id="1_8ksrd"]
+[ext_resource type="Script" uid="uid://uvveuwyulnbk" path="res://Code/Data/ArmorData.cs" id="1_vude3"]
+
+[resource]
+script = ExtResource("1_vude3")
+armorAmount = 6
+armorType = 1
+itemName = "Chain Helm"
+description = "A hybrid plate/chain helmet."
+icon = ExtResource("1_8ksrd")
+thisSlotRequires = 6
+itemType = 1
+price = 9
+isBlank = false
+metadata/_custom_type_script = "uid://uvveuwyulnbk"

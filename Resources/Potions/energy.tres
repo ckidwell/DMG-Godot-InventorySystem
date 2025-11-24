@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PotionData" load_steps=3 format=3 uid="uid://c6ejotwjmyjje"]
+
+[ext_resource type="Texture2D" uid="uid://gptg15gmmh32" path="res://Images/AIIcons/Potions/gold_potion.png" id="1_36i5x"]
+[ext_resource type="Script" uid="uid://dyg76heuhweyx" path="res://Code/Data/PotionData.cs" id="1_o8bsf"]
+
+[resource]
+script = ExtResource("1_o8bsf")
+potionType = 3
+amount = 25
+itemName = "Energy Potion"
+description = "This will restore some energy."
+icon = ExtResource("1_36i5x")
+itemType = 3
+isBlank = false
+metadata/_custom_type_script = "uid://dyg76heuhweyx"

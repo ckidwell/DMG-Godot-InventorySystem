@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dobtuwgsgldpp"]
+
+[ext_resource type="Script" uid="uid://dfmx7dkwjakm5" path="res://scenes/Examples/UseItemEventDataLabel.cs" id="1_dep0o"]
+
+[node name="UseItemEventDataLabel" type="Label"]
+text = "UseItem Event Data"
+script = ExtResource("1_dep0o")
+
+[node name="Timer" type="Timer" parent="."]

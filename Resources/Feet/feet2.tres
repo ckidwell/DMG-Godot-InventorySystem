@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ArmorData" load_steps=3 format=3 uid="uid://cgrmss1bqbdht"]
+
+[ext_resource type="Script" uid="uid://uvveuwyulnbk" path="res://Code/Data/ArmorData.cs" id="1_jd8e3"]
+[ext_resource type="Texture2D" uid="uid://dlsfcqvmup355" path="res://Images/Armor/leather_boots3.png" id="1_jyoql"]
+
+[resource]
+script = ExtResource("1_jd8e3")
+armorAmount = 5
+armorType = 1
+itemName = "Leather Boots"
+description = "A soft pair of leather boots."
+icon = ExtResource("1_jyoql")
+thisSlotRequires = 4
+itemType = 1
+price = 5
+isBlank = false
+metadata/_custom_type_script = "uid://uvveuwyulnbk"

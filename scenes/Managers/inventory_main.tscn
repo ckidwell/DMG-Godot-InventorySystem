@@ -1,0 +1,119 @@
+[gd_scene load_steps=35 format=3 uid="uid://bmo0en0557tdl"]
+
+[ext_resource type="PackedScene" uid="uid://wyuldxsey41x" path="res://scenes/Managers/inventory_manager.tscn" id="1_5tao3"]
+[ext_resource type="PackedScene" uid="uid://dg7ejl6kgwkhh" path="res://scenes/Examples/example_item_use_system.tscn" id="1_i1p1e"]
+[ext_resource type="Resource" uid="uid://b8u5nnm60otu1" path="res://Resources/Chest/chest1.tres" id="2_hjbcd"]
+[ext_resource type="PackedScene" uid="uid://cx7xnoj3lvr5c" path="res://scenes/Examples/inventory_example.tscn" id="2_ngqb0"]
+[ext_resource type="Resource" uid="uid://ddkdvjslrpjge" path="res://Resources/Chest/chest2.tres" id="3_8mbrm"]
+[ext_resource type="PackedScene" uid="uid://daxb544882m8e" path="res://scenes/Examples/equipment_example.tscn" id="3_32lra"]
+[ext_resource type="Script" uid="uid://be51d1uhuwkqx" path="res://scenes/Examples/example_equipment_button.gd" id="3_qmafa"]
+[ext_resource type="PackedScene" uid="uid://cxl47xrwv584s" path="res://scenes/ui/inspector.tscn" id="4_3vs6d"]
+[ext_resource type="Resource" uid="uid://bm31e8lropoua" path="res://Resources/Chest/chest3.tres" id="4_js7nj"]
+[ext_resource type="Script" uid="uid://c2ycqic4itije" path="res://scenes/Examples/ExampleInventoryButton.cs" id="5_32lra"]
+[ext_resource type="Resource" uid="uid://c8r8wsbcrhbbg" path="res://Resources/Feet/feet1.tres" id="5_d7gp2"]
+[ext_resource type="PackedScene" uid="uid://dfmar5bvctuyk" path="res://scenes/Examples/action_bar_example.tscn" id="5_m3ht7"]
+[ext_resource type="Texture2D" uid="uid://dgsfdykbvhtdo" path="res://Images/AIIcons/blank_icon.png" id="5_x1tu4"]
+[ext_resource type="Resource" uid="uid://cgrmss1bqbdht" path="res://Resources/Feet/feet2.tres" id="6_euws2"]
+[ext_resource type="PackedScene" uid="uid://sa6mtqpyuhgv" path="res://Code/Utilities/drag_inventory.tscn" id="6_senod"]
+[ext_resource type="Resource" uid="uid://c6tislqgmpojl" path="res://Resources/Feet/feet3.tres" id="7_l4iy4"]
+[ext_resource type="Script" uid="uid://d36fa3f52sjeh" path="res://scenes/Examples/TestButton.cs" id="10_es8eg"]
+[ext_resource type="Script" uid="uid://utboh8gevjd2" path="res://Code/Data/InventoryResource.cs" id="10_l6uw1"]
+[ext_resource type="Resource" uid="uid://bs3i1l6m0jwx1" path="res://Resources/Weapons/axe.tres" id="11_l4iy4"]
+[ext_resource type="Resource" uid="uid://3aihnakmv0xu" path="res://Resources/Weapons/hammer.tres" id="12_w0tcn"]
+[ext_resource type="Resource" uid="uid://du538h7usp274" path="res://Resources/Weapons/mace.tres" id="13_j1t88"]
+[ext_resource type="Resource" uid="uid://c5nhrj0s54yn0" path="res://Resources/Weapons/sword_1h.tres" id="15_1f4gy"]
+[ext_resource type="Resource" uid="uid://c1apfrtdnnovs" path="res://Resources/Weapons/shield.tres" id="15_atwcn"]
+[ext_resource type="Resource" uid="uid://5rpjjxl7x8ji" path="res://Resources/Weapons/sword_2h.tres" id="16_g7bp4"]
+[ext_resource type="Resource" uid="uid://b07lta2pj3w5q" path="res://Resources/Potions/action_points.tres" id="18_atwcn"]
+[ext_resource type="Resource" uid="uid://c6ejotwjmyjje" path="res://Resources/Potions/energy.tres" id="19_2hra2"]
+[ext_resource type="Resource" uid="uid://bfs80fuanp4d8" path="res://Resources/Helmets/helm1.tres" id="19_atwcn"]
+[ext_resource type="Resource" uid="uid://cebp4fanv34yc" path="res://Resources/Helmets/helm2.tres" id="20_2hra2"]
+[ext_resource type="Resource" uid="uid://bcwg4tnqx8jfk" path="res://Resources/Potions/healing.tres" id="20_atwcn"]
+[ext_resource type="Resource" uid="uid://dubjey4x56ln3" path="res://Resources/Potions/mana.tres" id="21_atwcn"]
+[ext_resource type="Resource" uid="uid://cfxh5d7nc5oie" path="res://Resources/Helmets/helm3.tres" id="21_qwa3v"]
+[ext_resource type="Script" uid="uid://dlbhm4agh4qdm" path="res://scenes/Examples/TestButtonLoadInventory.cs" id="26_w0tcn"]
+[ext_resource type="Script" uid="uid://j3xwhxd8lnwb" path="res://scenes/Examples/TestLoadWeapons.cs" id="33_2hra2"]
+[ext_resource type="PackedScene" uid="uid://wp5p4ryj8tv0" path="res://scenes/Examples/example_use_item_event_ui.tscn" id="33_atwcn"]
+
+[node name="inventory_main" type="Node"]
+
+[node name="example_item_use_system" parent="." instance=ExtResource("1_i1p1e")]
+
+[node name="inventory_resource" type="Node" parent="."]
+script = ExtResource("10_l6uw1")
+inventoryData = Array[Resource]([ExtResource("11_l4iy4"), ExtResource("12_w0tcn"), ExtResource("13_j1t88"), ExtResource("15_atwcn"), ExtResource("15_1f4gy"), ExtResource("16_g7bp4"), ExtResource("18_atwcn"), ExtResource("19_2hra2"), ExtResource("20_atwcn"), ExtResource("21_atwcn"), ExtResource("2_hjbcd"), ExtResource("3_8mbrm"), ExtResource("4_js7nj"), ExtResource("5_d7gp2"), ExtResource("6_euws2"), ExtResource("7_l4iy4"), ExtResource("19_atwcn"), ExtResource("20_2hra2"), ExtResource("21_qwa3v")])
+
+[node name="inventory_manager" parent="." node_paths=PackedStringArray("inventoryResource") instance=ExtResource("1_5tao3")]
+inventoryPrefab = ExtResource("2_ngqb0")
+equipmentPrefab = ExtResource("3_32lra")
+inspectorPanel = ExtResource("4_3vs6d")
+inventoryResource = NodePath("../inventory_resource")
+blankSprite = ExtResource("5_x1tu4")
+maximumNumberOfAttributesOnItems = 1
+
+[node name="DragInventory" parent="." instance=ExtResource("6_senod")]
+
+[node name="ExampleUseItemEventUI" parent="." instance=ExtResource("33_atwcn")]
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -114.0
+offset_right = -0.30407715
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="InventoryButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 7.0
+offset_right = 159.0
+offset_bottom = 50.0
+text = "(I)NVENTORY"
+script = ExtResource("5_32lra")
+
+[node name="EquipmentButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 59.0
+offset_right = 161.0
+offset_bottom = 102.0
+text = "(E)QUIPMENT"
+script = ExtResource("3_qmafa")
+
+[node name="TestButton" type="Button" parent="Panel" node_paths=PackedStringArray("actionBarExample")]
+layout_mode = 0
+offset_left = 819.0
+offset_top = 8.0
+offset_right = 949.0
+offset_bottom = 51.0
+text = "Load Action Bar"
+script = ExtResource("10_es8eg")
+actionBarExample = NodePath("../ActionBarExample")
+
+[node name="TestButton2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 822.0
+offset_top = 59.0
+offset_right = 947.0
+offset_bottom = 102.0
+text = "Load Inventory"
+script = ExtResource("26_w0tcn")
+
+[node name="TestButton3" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 969.0
+offset_top = 56.0
+offset_right = 1094.0
+offset_bottom = 99.0
+text = "Weapons Load"
+script = ExtResource("33_2hra2")
+
+[node name="ActionBarExample" parent="Panel" instance=ExtResource("5_m3ht7")]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 23.0
+offset_right = 797.0
+offset_bottom = 87.0

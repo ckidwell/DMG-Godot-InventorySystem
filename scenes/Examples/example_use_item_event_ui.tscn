@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://wp5p4ryj8tv0"]
+
+[ext_resource type="Script" uid="uid://b6he6du3hykio" path="res://scenes/Examples/ExampleUseItemEventUi.cs" id="1_flusp"]
+
+[node name="ExampleUseItemEventUI" type="CanvasLayer" node_paths=PackedStringArray("useItemEventContainer")]
+script = ExtResource("1_flusp")
+useItemEventContainer = NodePath("PanelContainer/MarginContainer/VBoxContainer/VBoxContainer")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_left = 296.095
+offset_top = 16.0
+offset_right = 764.0945
+offset_bottom = 466.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "UseItem Events"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="UseItemEventDataLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "UseItem Event Data"

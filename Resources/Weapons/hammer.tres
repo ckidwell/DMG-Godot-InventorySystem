@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=3 format=3 uid="uid://3aihnakmv0xu"]
+
+[ext_resource type="Script" uid="uid://cn54g7ufwhjgi" path="res://Code/Data/WeaponData.cs" id="1_jla3p"]
+[ext_resource type="Texture2D" uid="uid://bfnybbiyddqyh" path="res://Images/AIIcons/Weapons/hammer_1.png" id="1_mc3mh"]
+
+[resource]
+script = ExtResource("1_jla3p")
+weaponType = 1
+minDamage = 3
+maxDamage = 12
+ActionPointCost = 5
+itemName = "Volcanic War Hammer"
+description = "A warhammer still glowing with its volcanic forging."
+icon = ExtResource("1_mc3mh")
+thisSlotRequires = 11
+itemType = 8
+quality = 2
+isBlank = false
+metadata/_custom_type_script = "uid://cn54g7ufwhjgi"

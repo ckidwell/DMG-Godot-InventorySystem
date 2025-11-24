@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=3 format=3 uid="uid://c1apfrtdnnovs"]
+
+[ext_resource type="Texture2D" uid="uid://bp1ucdk0inpoh" path="res://Images/AIIcons/Weapons/shield1.png" id="1_4mmdb"]
+[ext_resource type="Script" uid="uid://cn54g7ufwhjgi" path="res://Code/Data/WeaponData.cs" id="1_8tmw7"]
+
+[resource]
+script = ExtResource("1_8tmw7")
+minDamage = 2
+maxDamage = 5
+itemName = "Royal Guard Shield"
+description = "A strong shield with the royal guard's emblem on it."
+icon = ExtResource("1_4mmdb")
+thisSlotRequires = 14
+itemType = 8
+quality = 1
+isBlank = false
+metadata/_custom_type_script = "uid://cn54g7ufwhjgi"

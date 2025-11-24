@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=3 format=3 uid="uid://5rpjjxl7x8ji"]
+
+[ext_resource type="Texture2D" uid="uid://dlpeow4sxhfdd" path="res://Images/AIIcons/Weapons/sword_2h.png" id="1_3ev56"]
+[ext_resource type="Script" uid="uid://cn54g7ufwhjgi" path="res://Code/Data/WeaponData.cs" id="1_l0hyi"]
+
+[resource]
+script = ExtResource("1_l0hyi")
+weaponType = 3
+minDamage = 3
+maxDamage = 12
+ActionPointCost = 7
+itemName = "Two Handed Sword"
+description = "A large two handed sword."
+icon = ExtResource("1_3ev56")
+thisSlotRequires = 12
+itemType = 8
+isBlank = false
+metadata/_custom_type_script = "uid://cn54g7ufwhjgi"

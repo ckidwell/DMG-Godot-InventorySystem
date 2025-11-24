@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ArmorData" load_steps=3 format=3 uid="uid://bm31e8lropoua"]
+
+[ext_resource type="Texture2D" uid="uid://o22rr73ve76d" path="res://Images/Armor/chest_armor2.png" id="1_8nv2j"]
+[ext_resource type="Script" uid="uid://uvveuwyulnbk" path="res://Code/Data/ArmorData.cs" id="1_dn1ev"]
+
+[resource]
+script = ExtResource("1_dn1ev")
+armorAmount = 5
+armorType = 1
+itemName = "Chain Hauberk"
+description = "Medium set of armor"
+icon = ExtResource("1_8nv2j")
+thisSlotRequires = 2
+itemType = 1
+isBlank = false
+metadata/_custom_type_script = "uid://uvveuwyulnbk"

@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfmar5bvctuyk"]
+
+[ext_resource type="Script" uid="uid://kuxhh2liwbl2" path="res://scenes/Examples/ActionBarExample.cs" id="1_qorj0"]
+[ext_resource type="PackedScene" uid="uid://01dod7fbq1lb" path="res://scenes/ui/inventory_container.tscn" id="1_toio5"]
+[ext_resource type="Texture2D" uid="uid://deq4oq4vietbq" path="res://Images/bluegrey_square.png" id="2_qorj0"]
+
+[node name="ActionBarExample" type="PanelContainer" node_paths=PackedStringArray("mainHandContainer", "offHandContainer", "actionBarContainer1", "actionBarContainer2", "actionBarContainer3", "actionBarContainer4")]
+offset_left = 230.715
+offset_top = 21.535
+offset_right = 571.17017
+offset_bottom = 85.535
+script = ExtResource("1_qorj0")
+mainHandContainer = NodePath("HBoxContainer/weapon_container_1")
+offHandContainer = NodePath("HBoxContainer/weapon_container_2")
+actionBarContainer1 = NodePath("HBoxContainer/inventory_container3")
+actionBarContainer2 = NodePath("HBoxContainer/inventory_container4")
+actionBarContainer3 = NodePath("HBoxContainer/inventory_container5")
+actionBarContainer4 = NodePath("HBoxContainer/inventory_container6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="weapon_container_1" parent="HBoxContainer" node_paths=PackedStringArray("_otherWeaponSlot") instance=ExtResource("1_toio5")]
+layout_mode = 2
+slotRequirement = 13
+_otherWeaponSlot = NodePath("../weapon_container_2")
+
+[node name="weapon_container_2" parent="HBoxContainer" node_paths=PackedStringArray("_otherWeaponSlot") instance=ExtResource("1_toio5")]
+layout_mode = 2
+slotRequirement = 14
+_otherWeaponSlot = NodePath("../weapon_container_1")
+
+[node name="spacer" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_qorj0")
+
+[node name="inventory_container3" parent="HBoxContainer" instance=ExtResource("1_toio5")]
+layout_mode = 2
+
+[node name="inventory_container4" parent="HBoxContainer" instance=ExtResource("1_toio5")]
+layout_mode = 2
+
+[node name="inventory_container5" parent="HBoxContainer" instance=ExtResource("1_toio5")]
+layout_mode = 2
+
+[node name="inventory_container6" parent="HBoxContainer" instance=ExtResource("1_toio5")]
+layout_mode = 2
