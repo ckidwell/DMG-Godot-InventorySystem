@@ -17,7 +17,6 @@ The project is built on a the following stack:
 *   **Type Safety:** Full static typing support across the codebase.
 
 ### Gameplay Features
-*(TODO: Add your specific game mechanics here. Examples below:)*
 *   **Static Loot Creation** Create loot items that are static according to your specifications.
 *   **Procedural Loot Generation** Generate loot procedurally.
 *   **Configurable** where possible there are configurable/exposed parameters in the UI for items to customize the inventory to your particular project.
