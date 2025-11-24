@@ -1,4 +1,4 @@
-# Godot .NET Project
+# DMG-Godot-Inventory System, a C # / .NET Project
 
 This project is a game developed using the **Godot Engine** with C# integration.
 
