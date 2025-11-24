@@ -37,10 +37,6 @@ InventoryEvents="*res://Autoload/inventory_events.tscn"
 
 project/assembly_name="DMGInventorySystem"
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/resources_spreadsheet_view/plugin.cfg")
-
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
